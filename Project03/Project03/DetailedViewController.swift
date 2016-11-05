@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Social
 
 class DetailedViewController: UIViewController {
 
@@ -19,7 +20,6 @@ class DetailedViewController: UIViewController {
 		if let imgName = imageName {
 			mainImageView.image = UIImage(named: imgName)
 		}
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,6 +30,9 @@ class DetailedViewController: UIViewController {
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
 		navigationController?.hidesBarsOnTap = true
+		navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(sharedClick))
+		
+		
 	}
 	
 	override func viewWillDisappear(_ animated: Bool) {
@@ -37,15 +40,17 @@ class DetailedViewController: UIViewController {
 		super.viewWillDisappear(animated)
 	}
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+	func sharedClick(){
+//		let vc = UIActivityViewController(activityItems: [mainImageView.image!], applicationActivities: nil)
+//		vc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
+//		present(vc,animated: true)
+		
+		if let vc = SLComposeViewController(forServiceType: SLServiceTypeFacebook) {
+			vc.setInitialText("Hello World")
+			vc.add(mainImageView.image)
+			vc.add(URL(string: "https://github.com/HelloCore/HackingWithSwift.Project"))
+			present(vc,animated: true)
+		}
+		
+	}
 }
