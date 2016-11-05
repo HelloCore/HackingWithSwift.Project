@@ -1,15 +1,14 @@
 //
-//  Project01Tests.swift
-//  Project01Tests
+//  Project03Tests.swift
+//  Project03Tests
 //
-//  Created by AKKHARAWAT CHAYAPIWAT on 11/3/16.
+//  Created by AKKHARAWAT CHAYAPIWAT on 11/5/16.
 //  Copyright © 2016 AKKHARAWAT CHAYAPIWAT. All rights reserved.
 //
 
 import XCTest
-@testable import Project01
 
-class Project01Tests: XCTestCase {
+class Project03Tests: XCTestCase {
     
     override func setUp() {
         super.setUp()
