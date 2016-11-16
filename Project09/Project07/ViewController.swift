@@ -24,8 +24,7 @@ class ViewController: UITableViewController {
 
 	var petitions = [Petition]()
 	var labels = [UILabel]()
-	
-	
+		
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
