@@ -28,6 +28,7 @@ class ViewController: UITableViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		
 		DispatchQueue.global(qos: .userInitiated).async { [unowned self] in
 			let urlStr:String
 			if self.navigationController?.tabBarItem.tag == 0 {
