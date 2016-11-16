@@ -14,6 +14,8 @@
 		857555B91DDC16C30078B4E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 857555B71DDC16C30078B4E1 /* LaunchScreen.storyboard */; };
 		857555C41DDC16C30078B4E1 /* Project10Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857555C31DDC16C30078B4E1 /* Project10Tests.swift */; };
 		857555CF1DDC16C30078B4E1 /* Project10UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857555CE1DDC16C30078B4E1 /* Project10UITests.swift */; };
+		857555DD1DDC19100078B4E1 /* PersonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857555DC1DDC19100078B4E1 /* PersonCollectionViewCell.swift */; };
+		85DF2DF01DDC20530045F059 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DF2DEF1DDC20530045F059 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		857555CA1DDC16C30078B4E1 /* Project10UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Project10UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		857555CE1DDC16C30078B4E1 /* Project10UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project10UITests.swift; sourceTree = "<group>"; };
 		857555D01DDC16C30078B4E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		857555DC1DDC19100078B4E1 /* PersonCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCollectionViewCell.swift; sourceTree = "<group>"; };
+		85DF2DEF1DDC20530045F059 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				857555B51DDC16C30078B4E1 /* Assets.xcassets */,
 				857555B71DDC16C30078B4E1 /* LaunchScreen.storyboard */,
 				857555BA1DDC16C30078B4E1 /* Info.plist */,
+				857555DC1DDC19100078B4E1 /* PersonCollectionViewCell.swift */,
+				85DF2DEF1DDC20530045F059 /* Person.swift */,
 			);
 			path = Project10;
 			sourceTree = "<group>";
@@ -260,6 +266,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				857555B11DDC16C30078B4E1 /* ViewController.swift in Sources */,
+				857555DD1DDC19100078B4E1 /* PersonCollectionViewCell.swift in Sources */,
+				85DF2DF01DDC20530045F059 /* Person.swift in Sources */,
 				857555AF1DDC16C30078B4E1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,6 +425,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.HelloCore.Project10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -429,6 +438,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.HelloCore.Project10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -505,6 +515,7 @@
 				857555D51DDC16C30078B4E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		857555D61DDC16C30078B4E1 /* Build configuration list for PBXNativeTarget "Project10Tests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +524,7 @@
 				857555D81DDC16C30078B4E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		857555D91DDC16C30078B4E1 /* Build configuration list for PBXNativeTarget "Project10UITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +533,7 @@
 				857555DB1DDC16C30078B4E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
